@@ -1,5 +1,3 @@
-
-
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +7,10 @@
 body,
 html {
     /* background-color: aqua; */
+}
+
+.txt-primary {
+    color: #FD6E0A;
 }
 
 .navbar {
@@ -50,6 +52,11 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-image: url(images/header_bg.png), url(images/developer.png);
+    background-repeat: no-repeat;
+    background-position: right bottom, left top;
+    background-size: auto;
+    margin-bottom: 130px;
 }
 
 .about-me-image img {
@@ -63,7 +70,7 @@ html {
 .about-me-text h3 {
     color: var(--Dark-02, #474747);
     font-family: "Open Sans";
-    font-size: 2.34vw;
+    font-size: 2vw;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -72,7 +79,7 @@ html {
 .about-me-text h1 {
     color: var(--Dark-01, #181818);
     font-family: "Open Sans";
-    font-size: 4.42vw;
+    font-size: 3vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -82,7 +89,7 @@ html {
 .about-me-text p {
     color: var(--Dark-03, #757575);
     font-family: "Open Sans";
-    font-size: 0.94vw;
+    font-size: 1.2vw;
     font-style: normal;
     font-weight: 400;
     line-height: 1.6vw;
@@ -103,16 +110,52 @@ html {
     margin-right: 2.2vw;
 }
 
-.btn2{
+.btn2 {
     border-radius: 5px;
-border: 1px solid #FD6E0A;
-padding: 1.2vw;
-font-size: 1.1vw;
+    border: 1px solid #FD6E0A;
+    padding: 1.2vw;
+    font-size: 1.1vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     color: #FD6E0A;
     background-color: #FFF8F3;
+}
+
+/* about */
+.about {
+    margin: 0px 11.5vw 6.5vw 11.5vw;
+    background-color: #FFF8F3;
+    padding: 6.5vw 8.2vw;
+}
+
+.about h1 {
+    color: var(--Dark-01, #181818);
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.about-description {
+    margin-top: 2vw;
+    color: var(--Dark-03, #757575);
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 166.667% */
+}
+
+.about-parent {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 4vw;
 }
 
 
@@ -134,17 +177,23 @@ font-size: 1.1vw;
     }
 
     /* about me */
-    .about-me-text{
+    .about-me {
+        background-image: none;
+    }
+
+    .about-me-text {
         margin-left: 5%;
     }
-    .about-me-image img{
 
+    .about-me-image img {
+        width: 100%;
     }
 
-    .about-me-text p{
+    .about-me-text p {
         font-size: 2vw;
         line-height: 2.2vw;
     }
+
 }
 
 
@@ -176,40 +225,46 @@ font-size: 1.1vw;
     }
 
     /* about me */
-    .about-me{
+    .about-me {
         display: flex;
         flex-direction: column;
+        background-image: url(images/header_bg.png);
+        background-position: bottom, left;
+        background-size: 100%;
+
     }
 
-    .about-me-text{
+    .about-me-text {
         margin-top: 20vw;
         text-align: center;
         margin-bottom: 10vw;
     }
 
-    .about-me-image img{
+    .about-me-image img {
         height: 50vh;
         width: auto;
     }
 
-    .about-me-text h3{
-        font-size: 3.5vw ;
+    .about-me-text h3 {
+        font-size: 3.5vw;
     }
-    .about-me-text h1{
+
+    .about-me-text h1 {
         font-size: 6.5vw;
     }
 
-    .about-me-text p{
+    .about-me-text p {
         font-size: 3vw;
         line-height: 3.3vw;
         margin-bottom: 4vw;
     }
 
-    .btn1{
+    .btn1 {
         font-size: 3vw;
         padding: 3vw;
     }
-    .btn2{
+
+    .btn2 {
         font-size: 3vw;
         padding: 3vw;
     }
