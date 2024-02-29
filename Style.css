@@ -4,21 +4,18 @@
     box-sizing: border-box;
 }
 
-body,
-html {
-    /* background-color: aqua; */
-}
 
 .txt-primary {
     color: #FD6E0A;
 }
 
+/* navbar */
 .navbar {
     background-color: #FFF8F3;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0 20px 0;
+    padding: 15px 0;
 }
 
 .nav-item {
@@ -37,13 +34,16 @@ html {
     margin-right: 20%;
 }
 
-.nav-item i {
+#small-device{
     display: none;
 }
 
 .nav-item li a {
     text-decoration: none;
     font-size: 20px;
+}
+#close{
+    display: none;
 }
 
 /* About me section */
@@ -186,15 +186,59 @@ html {
 
 
 
-/* Tablet */
+/*Media  Tablet */
 @media (max-width : 770px) {
+    
     .logo {
         font-size: 38px;
+        margin-left: 2%;
     }
 
     .nav-item li a {
         font-size: 18px;
     }
+    #small-device{
+        display: block;
+    }
+    .navbar{
+        padding: 20px 30px;
+    }
+    .nav-item{
+        margin-right: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -1000px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 130px 0 0 10px;
+        transition: 0.3s;
+        gap: 50px;
+    }
+    .nav-item.active{
+        right: -100px;
+    }
+    
+    #close {
+        display: block;
+        position: absolute;
+        top: 40px;
+        margin-right: 230px;
+        border: 1px solid #474747;
+        padding: 9px;
+        background: #78db49;
+        border-radius: 50%;
+    }
+    #bar{
+        font-size: 28px;
+    }
+
+
 
     /* about me */
     .about-me {
@@ -231,28 +275,6 @@ html {
 
 /* Mobile */
 @media (max-width : 600px) {
-    .navbar {
-        border-bottom: 2px solid rgb(235, 232, 232);
-    }
-
-    .nav-item li {
-        display: none;
-    }
-
-    .logo {
-        font-size: 30px;
-        margin: 5%;
-    }
-
-    .nav-item i {
-        display: block;
-    }
-
-    .nav-item {
-        margin: 3%;
-        font-size: 20px;
-        color: blueviolet;
-    }
 
     /* about me */
     .about-me {
